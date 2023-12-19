@@ -1,5 +1,6 @@
 
 #include "colorUtils.h"
+#include <math.h>
 
 double rgbIntToFloat(int c) {
   return (c / 255.0);
@@ -24,10 +25,10 @@ int min(int x, int y, int z){
 
 int toGrayScaleLightness(int r, int g, int b){
 
-  return ((max(r,g,b) + min(r,g,b)) / 2);
+  return round((max(r,g,b) + min(r,g,b)) / 2);
 }
 
 int toGrayScaleLuminosity(int r, int g, int b){
 
-  return (0.21 * r + 0.72 * g + 0.07 * b);
+  return round(0.21 * r + 0.72 * g + 0.07 * b);
 }
