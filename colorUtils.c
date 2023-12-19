@@ -40,3 +40,6 @@ int toSepiaRed(int r, int g, int b){
 int toSepiaGreen(int r, int g, int b){
   return (round(( 0.349*r) + (0.686*g) + (0.168*b)));
 }
+int toSepiaBlue(int r, int g, int b){
+  return (round(( 0.272*r) + (0.534*g) + (0.131*b)));
+}
