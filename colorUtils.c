@@ -21,3 +21,8 @@ int min(int x, int y, int z){
   m = m < z ? m : z;
   return m;
 }
+
+int toGrayScaleLightness(int r, int g, int b){
+
+  return ((max(r,g,b) + min(r,g,b)) / 2);
+}
