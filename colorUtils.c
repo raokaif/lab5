@@ -17,5 +17,7 @@ int toGrayScaleAverage(int r, int g, int b) {
 }
 
 int min(int x, int y, int z){
-  
+  int m = x < y ? x : y;
+  m = m < z ? m : z;
+  return m;
 }
