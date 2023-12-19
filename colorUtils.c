@@ -15,3 +15,7 @@ int toGrayScaleAverage(int r, int g, int b) {
   //TODO: test this, it may be wrong!
   return (r + g + b) / 3;
 }
+
+int min(int x, int y, int z){
+  
+}
