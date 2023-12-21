@@ -193,7 +193,7 @@ int main(int argc, char **argv) {
   //        toSepiaRed(), toSepiaGreen(), toSepiaBlue()
   //       for at least 6 and a total of at least 20
 
-  
+
 
   // Test case for min function:
   int a=4;
@@ -208,6 +208,23 @@ int main(int argc, char **argv) {
     printf("PASSED\n your value is correct");
     numPassed++;
   }
+
+
+
+  // Test case for toGrayScaleAverage function:
+  int r=10;
+  int g=15;
+  int b=5;
+  expectedResult=10;
+  result=toGrayScaleAverage(r,g,b);
+   if(result != expectedResult) {
+    printf("FAILED to give grayscaleaverage");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+  }
+
 
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
