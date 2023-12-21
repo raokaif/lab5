@@ -239,7 +239,19 @@ int main(int argc, char **argv) {
     numPassed++;
   }
 
-
+// Test case for toGrayScaleLuminosity function:
+ int x=10;
+ int y=15;
+ int z=5;
+ expectedResult=0;
+  result=toGrayScaleLuminosity( x,y, z);
+   if(result != expectedResult) {
+    printf("FAILED to give grayscalelumonosity");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+    }
 
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
