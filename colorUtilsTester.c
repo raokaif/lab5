@@ -193,6 +193,23 @@ int main(int argc, char **argv) {
   //        toSepiaRed(), toSepiaGreen(), toSepiaBlue()
   //       for at least 6 and a total of at least 20
 
+  
+
+  // Test case for min function:
+  int a=4;
+  int b=5;
+  int c=6;
+  expectedResult=4;
+  result=min(a,b,c);
+  if(result != expectedResult) {
+    printf("FAILED to give min value");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+  }
+
+
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
   printf("Percent Passed:           %6.2f\n", 100.0 * numPassed / (numPassed + numFailed));
