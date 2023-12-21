@@ -225,6 +225,21 @@ int main(int argc, char **argv) {
     numPassed++;
   }
 
+// Test case for toGrayScaleLightness function:
+  int x=5;
+  int y=10;
+  int z=15;
+  expectedResult=10;
+  result=toGrayScaleLightness(x,y,z);
+  if(result != expectedResult) {
+    printf("FAILED to give grayscalelightness");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+  }
+
+
 
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
