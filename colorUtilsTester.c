@@ -179,6 +179,7 @@ int main(int argc, char **argv) {
   printf("TESTING: toGrayScaleAverage(%d,%d,%d): ", r, g, b);
   result = toGrayScaleAverage(r, g, b);
   //TODO: this test case will fail, why?
+  // This test case will fail because the expected result is get by rounding the final result and in toGrayScaleAverage function there is no rounding
   if(result != expectedResult) {
     printf("FAILED: toGrayScaleAverage returned %d, expected %d\n", result, expectedResult);
     numFailed++;
