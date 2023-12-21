@@ -283,6 +283,20 @@ if(result != expectedResult) {
   }
 
 
+//  Test case for toSepiaBlue function:
+int x=10;
+int y=15;
+int z=5;
+expectedResult=11;
+result=toSepiaBlue(x,y,z);
+if(result != expectedResult) {
+    printf("FAILED to give sepiablue value");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;}
+
+
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
   printf("Percent Passed:           %6.2f\n", 100.0 * numPassed / (numPassed + numFailed));
