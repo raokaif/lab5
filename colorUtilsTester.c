@@ -253,6 +253,21 @@ int main(int argc, char **argv) {
     numPassed++;
     }
 
+// Test case for toSepiaRed function
+ int x=10;
+int y=15;
+int z=5;
+expectedResult=16;
+result=toSepiaRed(x,y,z);
+if(result != expectedResult) {
+    printf("FAILED to give sepiared value");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+  }
+
+
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
