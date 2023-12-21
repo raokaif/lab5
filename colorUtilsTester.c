@@ -268,6 +268,20 @@ if(result != expectedResult) {
   }
 
 
+// Test case for toSepiaGreen function:
+int x=10;
+int y=15;
+int z=5;
+expectedResult=15;
+result=toSepiaGreen(x,y,z);
+if(result != expectedResult) {
+    printf("FAILED to give sepiagreen value");
+    numFailed++;
+  } else {
+    printf("PASSED\n your value is correct");
+    numPassed++;
+  }
+
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
